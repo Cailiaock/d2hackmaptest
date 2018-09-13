@@ -1,0 +1,4 @@
+LIBRARY	hackmap
+EXPORTS
+   QueryInterface	@1
+

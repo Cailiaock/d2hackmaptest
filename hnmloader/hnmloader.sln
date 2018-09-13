@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "hnmloader", "hnmloader.vcproj", "{3159719A-FE06-4439-84EF-5BA700E6A4DC}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{3159719A-FE06-4439-84EF-5BA700E6A4DC}.Debug.ActiveCfg = Debug|Win32
+		{3159719A-FE06-4439-84EF-5BA700E6A4DC}.Debug.Build.0 = Debug|Win32
+		{3159719A-FE06-4439-84EF-5BA700E6A4DC}.Release.ActiveCfg = Release|Win32
+		{3159719A-FE06-4439-84EF-5BA700E6A4DC}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

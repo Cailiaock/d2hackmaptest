@@ -1,0 +1,219 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_TRAYMENU MENU 
+BEGIN
+    POPUP "TrayMenu"
+    BEGIN
+        MENUITEM "&主界面",                     ID_PROPERTIES
+        MENUITEM "&退出Hackmap",                ID_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "&关于我",                     ID_ABOUT
+    END
+    POPUP "D2Menu"
+    BEGIN
+        MENUITEM "安装/更新Hackmap",            ID_D2MENU_LOADHACKMAPMANUALLY
+
+        MENUITEM "卸载Hackmap",                 ID_D2MENU_UNLOADHACKMAP
+        MENUITEM SEPARATOR
+        MENUITEM "加载其他Dll...",              ID_D2MENU_LOADOTHERMODULE
+    END
+    POPUP "DllMenu"
+    BEGIN
+        MENUITEM "卸载Dll",                     ID_DLLMENU_UNLOADDLL
+    END
+    POPUP "IScanMenu"
+    BEGIN
+        MENUITEM "检测",                        ID_ISCANMENU_SCANNOW
+        MENUITEM "恢复该地址处代码",            ID_ISCNMENU_RESTORE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUT DIALOGEX 0, 0, 234, 41
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "关于Hackmap"
+FONT 10, "??ì?", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,192,6,35,30
+    ICON            127,IDC_STATIC_ABOUT,6,6,20,20
+    LTEXT           "Sting's Hackmap for Diablo II 1.10",IDC_STATIC,30,5,155,
+                    10
+    LTEXT           "Version 1.16",IDC_STATIC,30,15,135,8
+    LTEXT           "2003 - 2004 - Sting - stingxp@yahoo.com",IDC_STATIC,30,
+                    25,162,8
+END
+
+IDD_PROPERTIES DIALOG  0, 0, 312, 202
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Hackmap Loader for Diablo II"
+FONT 10, "Courier New"
+BEGIN
+    PUSHBUTTON      "安装Hackmap",IDC_BTN_INSTALL,228,18,78,17
+    PUSHBUTTON      "卸载Hackmap",IDC_BTN_REMOVE,228,43,78,17
+    PUSHBUTTON      "古得拜",IDC_BTN_EXIT,228,168,78,17
+    PUSHBUTTON      "我是谁",IDC_BTN_ABOUT,228,143,78,17
+    CONTROL         "",IDC_LIST_PROCESS,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,6,
+                    18,216,168
+    LTEXT           "Ready",IDC_STATUS_BAR,6,190,304,9
+    PUSHBUTTON      "编辑配置文件",IDC_BTN_EDITCONFIG,228,68,78,17
+    CONTROL         "",IDC_TAB_VIEW,"SysTabControl32",TCS_FOCUSONBUTTONDOWN | 
+                    TCS_TOOLTIPS,6,6,92,12
+    CONTROL         "",IDC_LIST_MODULES,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_ALIGNLEFT | NOT WS_VISIBLE | 
+                    WS_BORDER | WS_TABSTOP,6,18,216,168
+    PUSHBUTTON      "安全开地图",IDC_BTN_REVEAL_AUTOMAP_ACT,228,118,78,17
+    CONTROL         "",IDC_LIST_INTEGRITYSCAN,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_ALIGNLEFT | NOT WS_VISIBLE | 
+                    WS_BORDER | WS_TABSTOP,6,18,216,168
+    PUSHBUTTON      "升级配置文件",IDC_BTN_UPGRADECONFIG,228,93,78,17
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 227
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 34
+    END
+
+    IDD_PROPERTIES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 305
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 195
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDC_BTN_INSTALL         "加载或重新加载Hackmap到所选游戏"
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_BTN_REMOVE          "从所选游戏卸载Hackmap"
+    IDC_BTN_ABOUT           "显示版本信息"
+    IDC_BTN_EDITCONFIG      "编辑d2hackmap.cfg"
+    IDS_TIP_LISTIVEW        "在item上点击右键弹出关联菜单..."
+    IDS_ERR_SELECT_GAME_FIRST "必须先选择一个游戏"
+    IDS_ERR_MODULE_NOTFOUND "找不到第一个模块"
+    IDS_ERR_GETMODULEHANDLE "获取模块句柄失败：%s"
+    IDS_ERR_OS_NOTSUPPORT   "你的操作系统不支持%s"
+    IDS_ERR_CANNT_CREATE_FOR_PROCESS "Can't create %s of process %d"
+    IDC_BTN_EXIT            "退出Hackmap"
+    IDS_ERR_CANNT_FIND      "找不到%s"
+    IDS_ERROR_FILE_NOTEXISTS "文件不存在: %s"
+    IDS_LOAD_SUCCESS        "%s被加载到进程(pid:%d)0x%08X处"
+    IDS_LOAD_FAIL           "加载失败: %s"
+    IDS_READY               "就绪"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_WRN_UNLOAD_DLL      "卸载dll可能使游戏进程崩溃,你知道你在做什么吗?"
+    IDS_WRN_LOAD_DLL        "你真地想加载%s到进程(pid=%d) ?"
+    IDS_LANG_IDS            "2052"
+    IDS_VERSION_INFO        "Sting's Hackmap 1.16 for Diablo II"
+    IDC_BTN_REVEAL_AUTOMAP_ACT "安全打开当前场景地图"
+    IDS_ERR_MUST_INGAME     "必须先入游戏才能用本功能"
+    IDS_WRN_UNPATCH_MODULE  "恢复本处指令可能会使游戏进程崩溃,你真的想这么做?"
+    IDS_WRN_ISCAN_FAILED    "完整性检查失败,继续吗?"
+    IDS_WRN_INTEGRITY_BROKEN "完整性检查检测到目标进程代码被改过,是否继续?"
+    IDS_LOADHACKMAP         "安装Hackmap"
+    IDS_UPDATEHACKMAP       "重新安装Hackmap"
+    IDS_WRN_UPGRADE_CONFIG  "Hackmap将升级d2hackmap.cfg, d2hackmap.vcb和d2hackmap.ini到最新版本。如果配置文件不存在，Hackmap会自动创建。继续吗？"
+    IDC_BTN_UPGRADECONFIG   "升级配置文件到最新版本"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

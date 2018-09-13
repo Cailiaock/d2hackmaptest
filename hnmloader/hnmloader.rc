@@ -1,0 +1,260 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_TRAY_ICON           ICON                    "res\\TrayIcon.ico"
+IDI_OK                  ICON                    "res\\OkBor.ico"
+IDI_DIABLOII            ICON                    "res\\d2x.ico"
+IDI_ABOUTME             ICON                    "res\\aboutme.ico"
+IDI_INSTALL             ICON                    "res\\install.ico"
+IDI_UNLOAD              ICON                    "res\\unload.ico"
+IDI_EXIT                ICON                    "res\\exit.ico"
+IDI_PORTRAIT            ICON                    "res\\portrait.ico"
+IDI_EDITCONFIG          ICON                    "res\\editconfig.ico"
+IDI_DLL                 ICON                    "res\\icon2.ico"
+IDI_REVEALACT           ICON                    "res\\revealac.ico"
+IDI_ISCAN               ICON                    "res\\iscan.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BACKGROUND          BITMAP                  "res\\Background.BMP"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_TRAYMENU MENU 
+BEGIN
+    POPUP "TrayMenu"
+    BEGIN
+        MENUITEM "&Properties",                 ID_PROPERTIES
+        MENUITEM "&Close",                      ID_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "&About",                      ID_ABOUT
+    END
+    POPUP "D2Menu"
+    BEGIN
+        MENUITEM "Install/Update Hackmap manually", 
+                                                ID_D2MENU_LOADHACKMAPMANUALLY
+
+        MENUITEM "Unload Hackmap",              ID_D2MENU_UNLOADHACKMAP
+        MENUITEM SEPARATOR
+        MENUITEM "Load Other Dll...",           ID_D2MENU_LOADOTHERMODULE
+    END
+    POPUP "DllMenu"
+    BEGIN
+        MENUITEM "Unload This Dll",             ID_DLLMENU_UNLOADDLL
+    END
+    POPUP "IScanMenu"
+    BEGIN
+        MENUITEM "Scan Immediatly",             ID_ISCANMENU_SCANNOW
+        MENUITEM "Unpatch this address",        ID_ISCNMENU_RESTORE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUT DIALOGEX 0, 0, 234, 41
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "About Hackmap"
+FONT 10, "Courier New", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,192,6,35,30
+    ICON            IDI_PORTRAIT,IDC_STATIC_ABOUT,6,6,20,20
+    LTEXT           "Sting's Hackmap for Diablo II 1.10",IDC_STATIC,30,5,155,
+                    10
+    LTEXT           "Version 1.16",IDC_STATIC,30,15,135,8
+    LTEXT           "2003 - 2004 - Sting - stingxp@yahoo.com",IDC_STATIC,30,
+                    25,162,8
+END
+
+IDD_PROPERTIES DIALOG  0, 0, 312, 202
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Hackmap Loader for Diablo II"
+FONT 10, "Courier New"
+BEGIN
+    PUSHBUTTON      "Install/Update",IDC_BTN_INSTALL,228,18,78,17
+    PUSHBUTTON      "Unload Hackmap",IDC_BTN_REMOVE,228,43,78,17
+    PUSHBUTTON      "Say Goodbye",IDC_BTN_EXIT,228,168,78,17
+    PUSHBUTTON      "About Me",IDC_BTN_ABOUT,228,143,78,17
+    CONTROL         "",IDC_LIST_PROCESS,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,6,
+                    18,216,168
+    LTEXT           "Ready",IDC_STATUS_BAR,6,190,304,9
+    PUSHBUTTON      "Edit Config",IDC_BTN_EDITCONFIG,228,68,78,17
+    CONTROL         "",IDC_TAB_VIEW,"SysTabControl32",TCS_FOCUSONBUTTONDOWN | 
+                    TCS_TOOLTIPS,6,6,92,12
+    CONTROL         "",IDC_LIST_MODULES,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_ALIGNLEFT | NOT WS_VISIBLE | 
+                    WS_BORDER | WS_TABSTOP,6,18,216,168
+    PUSHBUTTON      "Reveal Act",IDC_BTN_REVEAL_AUTOMAP_ACT,228,118,78,17
+    CONTROL         "",IDC_LIST_INTEGRITYSCAN,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_ALIGNLEFT | NOT WS_VISIBLE | 
+                    WS_BORDER | WS_TABSTOP,6,18,216,168
+    PUSHBUTTON      "Upgrade Config",IDC_BTN_UPGRADECONFIG,228,93,78,17
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 227
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 34
+    END
+
+    IDD_PROPERTIES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 305
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 195
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDC_BTN_INSTALL         "Load(or reload if loaded before) Hackmap into selected game"
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_BTN_REMOVE          "Unload Hackmap from selected game"
+    IDC_BTN_ABOUT           "Show version information"
+    IDC_BTN_EDITCONFIG      "Open d2hackmap.cfg to edit"
+    IDS_TIP_LISTIVEW        "Right click item to popup context menu..."
+    IDS_ERR_SELECT_GAME_FIRST "You must select a game first"
+    IDS_ERR_MODULE_NOTFOUND "Can't get first module of game"
+    IDS_ERR_GETMODULEHANDLE "Unable to get handle of %s"
+    IDS_ERR_OS_NOTSUPPORT   "Your operating system does not support the %s"
+    IDS_ERR_CANNT_CREATE_FOR_PROCESS "Can't create %s of process %d"
+    IDC_BTN_EXIT            "Exit Hackmap"
+    IDS_ERR_CANNT_FIND      "Unable to find %s"
+    IDS_ERROR_FILE_NOTEXISTS "File doesn't exist: %s"
+    IDS_LOAD_SUCCESS        "%s was loaded into pid:%d at 0x%08X"
+    IDS_LOAD_FAIL           "Loading Fail: %s"
+    IDS_READY               "Ready"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_WRN_UNLOAD_DLL      "Unload dll might crash the process, do you know what you are doing?"
+    IDS_WRN_LOAD_DLL        "Do you really want to load %s into the process (pid=%d) ?"
+    IDS_LANG_IDS            "0"
+    IDS_VERSION_INFO        "Sting's Hackmap 1.16 for Diablo II"
+    IDC_BTN_REVEAL_AUTOMAP_ACT "Reveal automap of current act in a SAFE way"
+    IDS_ERR_MUST_INGAME     "How can I do this when you are out of game, HUH?"
+    IDS_WRN_UNPATCH_MODULE  "Unpatch this location might crash the process, do you know what you are doing?"
+    IDS_WRN_ISCAN_FAILED    "Integrity scaner failed to check the target process for some reason. Do you want to continue?"
+    IDS_WRN_INTEGRITY_BROKEN 
+                            "Integrity scaner has detected target process is NOT virgin, check IScan view for more details. Go on anyway?"
+    IDS_LOADHACKMAP         "Install Hackmap"
+    IDS_UPDATEHACKMAP       "Update Hackmap"
+    IDS_WRN_UPGRADE_CONFIG  "Hackmap is going to upgrade your d2hackmap.cfg, d2hackmap.vcb and d2hackmap.ini to the lastest version with template config. Hackmap will automatically create a config file If it doesn't exist. Continue?"
+    IDC_BTN_UPGRADECONFIG   "Upgrade config files to the lastest version"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

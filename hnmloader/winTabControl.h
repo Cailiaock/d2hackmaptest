@@ -1,0 +1,18 @@
+//////////////////////////////////////////////////////////////////////
+//
+// sting - <stingxp@yahoo.com>
+//
+//////////////////////////////////////////////////////////////////////
+
+#pragma once
+
+class winTabControl
+{
+public:
+	winTabControl(void);
+	~winTabControl(void);
+	void Init(HWND hwnd);
+	void AddTab(LPTSTR pszText);
+private:
+	HWND m_hwnd;
+};

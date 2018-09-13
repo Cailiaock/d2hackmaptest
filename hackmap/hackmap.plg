@@ -1,0 +1,40 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: hackmap - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\STINGF~1\LOCALS~1\Temp\RSPD6.tmp" with contents
+[
+/nologo /MT /W3 /GX /Zi /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "HACKMAP_EXPORTS" /Fp"../tmp/hackmap/Release/hackmap.pch" /YX /Fo"../tmp/hackmap/Release/" /Fd"../tmp/hackmap/Release/" /FD /c 
+"F:\projects\d2hackmap\hackmap\hackmap.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\STINGF~1\LOCALS~1\Temp\RSPD6.tmp" 
+Creating temporary file "C:\DOCUME~1\STINGF~1\LOCALS~1\Temp\RSPD7.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"../bin/d2hackmap.pdb" /map:"../tmp/hackmap/Release/d2hackmap.map" /debug /machine:I386 /def:".\hackmap.def" /out:"../bin/d2hackmap.dll" /implib:"../bin/d2hackmap.lib" 
+\projects\d2hackmap\tmp\hackmap\Release\AntiDetect.obj
+\projects\d2hackmap\tmp\hackmap\Release\configproc.obj
+\projects\d2hackmap\tmp\hackmap\Release\hackmap.obj
+\projects\d2hackmap\tmp\hackmap\Release\hnminit.obj
+\projects\d2hackmap\tmp\hackmap\Release\memhelper.obj
+\projects\d2hackmap\tmp\hackmap\Release\mischelper.obj
+\projects\d2hackmap\tmp\hackmap\Release\ModuleWalker.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\STINGF~1\LOCALS~1\Temp\RSPD7.tmp"
+<h3>Output Window</h3>
+Compiling...
+hackmap.cpp
+Linking...
+   Creating library ../bin/d2hackmap.lib and object ../bin/d2hackmap.exp
+d2hackmap.exp : warning LNK4070: /OUT:hackmap.dll directive in .EXP differs from output filename "../bin/d2hackmap.dll"; ignoring directive
+
+
+
+<h3>Results</h3>
+d2hackmap.dll - 0 error(s), 1 warning(s)
+</pre>
+</body>
+</html>
