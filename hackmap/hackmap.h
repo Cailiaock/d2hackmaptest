@@ -479,4 +479,9 @@ enum TStatType {
     	PassiveMagicPierce
     	};
 
+DWORD DD2GameSendPacketToServer(LPBYTE buf, DWORD len);
+DWORD DD2GetCursorItem();
+BOOL DD2DropCursorItemToGround();
+
+
 #endif // HACK_MAP_H

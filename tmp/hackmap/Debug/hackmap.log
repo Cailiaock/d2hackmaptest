@@ -1,1 +1,139 @@
-﻿D:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.Cpp.WindowsSDK.targets(46,5): error MSB8036: 找不到 Windows SDK 版本8.1。请安装所需的版本的 Windows SDK 或者在项目属性页中或通过右键单击解决方案并选择“重定解决方案目标”来更改 SDK 版本。
+﻿  ModuleWalker.cpp
+c:\users\cao\desktop\d2hackmaptest\hackmap\modulewalker.cpp(30): warning C4996: 'GetVersionExA': 被声明为已否决
+  e:\windows kits\10\include\10.0.17134.0\um\sysinfoapi.h(378): note: 参见“GetVersionExA”的声明
+c:\users\cao\desktop\d2hackmaptest\hackmap\modulewalker.cpp(100): warning C4002: “GlobalFormatAndReportStatus”宏的实参太多
+c:\users\cao\desktop\d2hackmaptest\hackmap\modulewalker.cpp(251): warning C4996: '_tcsncpy': This function or variable may be unsafe. Consider using _tcsncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\tchar.h(1551): note: 参见“_tcsncpy”的声明
+  mischelper.cpp
+c:\users\cao\desktop\d2hackmaptest\hackmap\hackmap.h(6): warning C4005: “ARRAYSIZE”: 宏重定义
+  e:\windows kits\10\include\10.0.17134.0\um\winnt.h(1315): note: 参见“ARRAYSIZE”的前一个定义
+c:\users\cao\desktop\d2hackmaptest\hackmap\mischelper.cpp(61): warning C4996: 'strnicmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strnicmp. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\string.h(560): note: 参见“strnicmp”的声明
+c:\users\cao\desktop\d2hackmaptest\hackmap\mischelper.cpp(170): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\string.h(133): note: 参见“strcpy”的声明
+c:\users\cao\desktop\d2hackmaptest\hackmap\mischelper.cpp(175): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\string.h(133): note: 参见“strcpy”的声明
+c:\users\cao\desktop\d2hackmaptest\hackmap\mischelper.cpp(176): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\string.h(90): note: 参见“strcat”的声明
+  memhelper.cpp
+  hnminit.cpp
+c:\users\cao\desktop\d2hackmaptest\hackmap\hackmap.h(6): warning C4005: “ARRAYSIZE”: 宏重定义
+  e:\windows kits\10\include\10.0.17134.0\um\winnt.h(1315): note: 参见“ARRAYSIZE”的前一个定义
+  hackmap.cpp
+c:\users\cao\desktop\d2hackmaptest\hackmap\hackmap.h(6): warning C4005: “ARRAYSIZE”: 宏重定义
+  e:\windows kits\10\include\10.0.17134.0\um\winnt.h(1315): note: 参见“ARRAYSIZE”的前一个定义
+c:\users\cao\desktop\d2hackmaptest\hackmap\exception.cxx(76): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\string.h(133): note: 参见“strcpy”的声明
+c:\users\cao\desktop\d2hackmaptest\hackmap\exception.cxx(100): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\string.h(133): note: 参见“strcpy”的声明
+c:\users\cao\desktop\d2hackmaptest\hackmap\exception.cxx(101): warning C4477: “sprintf”: 格式字符串“%08X”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“PBYTE”
+c:\users\cao\desktop\d2hackmaptest\hackmap\exception.cxx(101): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(1774): note: 参见“sprintf”的声明
+c:\users\cao\desktop\d2hackmaptest\hackmap\exception.cxx(105): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(1774): note: 参见“sprintf”的声明
+c:\users\cao\desktop\d2hackmaptest\hackmap\exception.cxx(115): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(1774): note: 参见“sprintf”的声明
+c:\users\cao\desktop\d2hackmaptest\hackmap\exception.cxx(127): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(1774): note: 参见“sprintf”的声明
+c:\users\cao\desktop\d2hackmaptest\hackmap\exception.cxx(131): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\string.h(133): note: 参见“strcpy”的声明
+c:\users\cao\desktop\d2hackmaptest\hackmap\exception.cxx(141): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(1774): note: 参见“sprintf”的声明
+c:\users\cao\desktop\d2hackmaptest\hackmap\exception.cxx(148): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(1774): note: 参见“sprintf”的声明
+c:\users\cao\desktop\d2hackmaptest\hackmap\exception.cxx(149): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(1774): note: 参见“sprintf”的声明
+c:\users\cao\desktop\d2hackmaptest\hackmap\d2helpers.cxx(103): warning C4838: 从“int”转换到“DWORD”需要收缩转换
+c:\users\cao\desktop\d2hackmaptest\hackmap\hackmap.cpp(121): warning C4244: “return”: 从“WORD”转换到“BYTE”，可能丢失数据
+c:\users\cao\desktop\d2hackmaptest\hackmap\hackmap.cpp(168): warning C4101: “d2”: 未引用的局部变量
+c:\users\cao\desktop\d2hackmaptest\hackmap\hackmap.cpp(218): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(1774): note: 参见“sprintf”的声明
+c:\users\cao\desktop\d2hackmaptest\hackmap\hackmap.cpp(223): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(1774): note: 参见“sprintf”的声明
+c:\users\cao\desktop\d2hackmaptest\hackmap\hackmap.cpp(228): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(1774): note: 参见“sprintf”的声明
+c:\users\cao\desktop\d2hackmaptest\hackmap\hackmap.cpp(369): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(1774): note: 参见“sprintf”的声明
+c:\users\cao\desktop\d2hackmaptest\hackmap\hackmap.cpp(392): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(1774): note: 参见“sprintf”的声明
+c:\users\cao\desktop\d2hackmaptest\hackmap\hackmap.cpp(580): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\string.h(133): note: 参见“strcpy”的声明
+c:\users\cao\desktop\d2hackmaptest\hackmap\hackmap.cpp(590): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(1774): note: 参见“sprintf”的声明
+c:\users\cao\desktop\d2hackmaptest\hackmap\hackmap.cpp(591): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\string.h(90): note: 参见“strcat”的声明
+c:\users\cao\desktop\d2hackmaptest\hackmap\hackmap.cpp(995): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstring.h(123): note: 参见“wcscpy”的声明
+c:\users\cao\desktop\d2hackmaptest\hackmap\hackmap.cpp(2852): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstring.h(123): note: 参见“wcscpy”的声明
+c:\users\cao\desktop\d2hackmaptest\hackmap\hackmap.cpp(2889): warning C4996: 'wcscat': This function or variable may be unsafe. Consider using wcscat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstring.h(100): note: 参见“wcscat”的声明
+c:\users\cao\desktop\d2hackmaptest\hackmap\hackmap.cpp(2893): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstring.h(123): note: 参见“wcscpy”的声明
+c:\users\cao\desktop\d2hackmaptest\hackmap\hackmap.cpp(2943): warning C4996: 'wcscat': This function or variable may be unsafe. Consider using wcscat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstring.h(100): note: 参见“wcscat”的声明
+c:\users\cao\desktop\d2hackmaptest\hackmap\hackmap.cpp(3121): warning C4838: 从“int”转换到“BYTE”需要收缩转换
+c:\users\cao\desktop\d2hackmaptest\hackmap\hackmap.cpp(3132): warning C4996: 'wcscat': This function or variable may be unsafe. Consider using wcscat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstring.h(100): note: 参见“wcscat”的声明
+c:\users\cao\desktop\d2hackmaptest\hackmap\hackmap.cpp(3595): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstring.h(123): note: 参见“wcscpy”的声明
+c:\users\cao\desktop\d2hackmaptest\hackmap\hackmap.cpp(3760): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(1774): note: 参见“sprintf”的声明
+c:\users\cao\desktop\d2hackmaptest\hackmap\hackmap.cpp(3762): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(1774): note: 参见“sprintf”的声明
+c:\users\cao\desktop\d2hackmaptest\hackmap\hackmap.cpp(3773): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(1774): note: 参见“sprintf”的声明
+c:\users\cao\desktop\d2hackmaptest\hackmap\hackmap.cpp(3822): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(1774): note: 参见“sprintf”的声明
+c:\users\cao\desktop\d2hackmaptest\hackmap\hackmap.cpp(3825): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\string.h(133): note: 参见“strcpy”的声明
+c:\users\cao\desktop\d2hackmaptest\hackmap\hackmap.cpp(3866): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\string.h(133): note: 参见“strcpy”的声明
+c:\users\cao\desktop\d2hackmaptest\hackmap\hackmap.cpp(4123): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstring.h(123): note: 参见“wcscpy”的声明
+c:\users\cao\desktop\d2hackmaptest\hackmap\hackmap.cpp(4554): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\string.h(133): note: 参见“strcpy”的声明
+c:\users\cao\desktop\d2hackmaptest\hackmap\hackmap.cpp(4555): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\string.h(90): note: 参见“strcat”的声明
+c:\users\cao\desktop\d2hackmaptest\hackmap\hackmap.cpp(4818): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\string.h(133): note: 参见“strcpy”的声明
+c:\users\cao\desktop\d2hackmaptest\hackmap\hackmap.cpp(4829): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(1774): note: 参见“sprintf”的声明
+c:\users\cao\desktop\d2hackmaptest\hackmap\hackmap.cpp(4831): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\string.h(90): note: 参见“strcat”的声明
+c:\users\cao\desktop\d2hackmaptest\hackmap\hackmap.cpp(4833): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\string.h(133): note: 参见“strcpy”的声明
+c:\users\cao\desktop\d2hackmaptest\hackmap\hackmap.cpp(5064): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstring.h(123): note: 参见“wcscpy”的声明
+c:\users\cao\desktop\d2hackmaptest\hackmap\hackmap.cpp(4958): warning C4101: “j”: 未引用的局部变量
+c:\users\cao\desktop\d2hackmaptest\hackmap\hackmap.cpp(4959): warning C4101: “char2”: 未引用的局部变量
+c:\users\cao\desktop\d2hackmaptest\hackmap\d2patchs.cxx(26): warning C4838: 从“int”转换到“DWORD”需要收缩转换
+c:\users\cao\desktop\d2hackmaptest\hackmap\d2patchs.cxx(31): warning C4838: 从“int”转换到“DWORD”需要收缩转换
+c:\users\cao\desktop\d2hackmaptest\hackmap\d2patchs.cxx(35): warning C4838: 从“int”转换到“DWORD”需要收缩转换
+c:\users\cao\desktop\d2hackmaptest\hackmap\d2patchs.cxx(46): warning C4838: 从“int”转换到“DWORD”需要收缩转换
+c:\users\cao\desktop\d2hackmaptest\hackmap\d2patchs.cxx(50): warning C4838: 从“int”转换到“DWORD”需要收缩转换
+c:\users\cao\desktop\d2hackmaptest\hackmap\d2patchs.cxx(57): warning C4838: 从“int”转换到“DWORD”需要收缩转换
+c:\users\cao\desktop\d2hackmaptest\hackmap\d2patchs.cxx(77): warning C4838: 从“int”转换到“DWORD”需要收缩转换
+c:\users\cao\desktop\d2hackmaptest\hackmap\d2patchs.cxx(242): warning C4838: 从“int”转换到“DWORD”需要收缩转换
+c:\users\cao\desktop\d2hackmaptest\hackmap\d2patchs.cxx(267): warning C4838: 从“int”转换到“DWORD”需要收缩转换
+c:\users\cao\desktop\d2hackmaptest\hackmap\hackmap.cpp(5575): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\string.h(549): note: 参见“stricmp”的声明
+c:\users\cao\desktop\d2hackmaptest\hackmap\hackmap.cpp(5682): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\string.h(133): note: 参见“strcpy”的声明
+c:\users\cao\desktop\d2hackmaptest\hackmap\hackmap.cpp(5687): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\string.h(133): note: 参见“strcpy”的声明
+  configproc.cpp
+c:\users\cao\desktop\d2hackmaptest\hackmap\hackmap.h(6): warning C4005: “ARRAYSIZE”: 宏重定义
+  e:\windows kits\10\include\10.0.17134.0\um\winnt.h(1315): note: 参见“ARRAYSIZE”的前一个定义
+c:\users\cao\desktop\d2hackmaptest\hackmap\configproc.cpp(102): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\string.h(133): note: 参见“strcpy”的声明
+c:\users\cao\desktop\d2hackmaptest\hackmap\configproc.cpp(146): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\string.h(549): note: 参见“stricmp”的声明
+  AntiDetect.cpp
+  正在生成代码...
+D:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(1205,5): warning MSB8012: TargetPath(C:\Users\CAO\Desktop\d2hackmaptest\hackmap\../..\hackmap.dll) 与 Linker 的 OutputFile 属性值(C:\Users\CAO\Desktop\d2hackmap.dll)不匹配。这可能导致项目生成不正确。若要更正此问题，请确保 $(OutDir)、$(TargetName) 和 $(TargetExt) 属性值与 %(Link.OutputFile) 中指定的值匹配。
+D:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(1207,5): warning MSB8012: TargetName(hackmap) 与 Linker 的 OutputFile 属性值(d2hackmap)不匹配。这可能导致项目生成不正确。若要更正此问题，请确保 $(OutDir)、$(TargetName) 和 $(TargetExt) 属性值与 %(Link.OutputFile) 中指定的值匹配。
+AntiDetect.obj : warning LNK4075: 忽略“/EDITANDCONTINUE”(由于“/SAFESEH”规范)
+    正在创建库 ../..\hackmap.lib 和对象 ../..\hackmap.exp
+hackmap.exp : warning LNK4070: .EXP 中的 /OUT:hackmap.dll 指令与输出文件名“../..\d2hackmap.dll”不同；忽略指令
+  hackmap.vcxproj -> C:\Users\CAO\Desktop\d2hackmaptest\hackmap\../..\hackmap.dll

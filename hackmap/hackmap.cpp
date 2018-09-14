@@ -1,17 +1,3 @@
-//-------------------------------------------------------------------------
-// Based on the source reversed from MH 5.1s sting-edited version
-// 2003- sting - stingxp@yahoo.com
-//
-// The part for localization support based on d2locale plugin for v1.09d
-// Authors(Battlecn.net ID): 
-//......
-//Neo
-//Kant
-//-------------------------------------------------------------------------
-
-//Mousepad's Diablo II Maphack v4.6c (v1.09d)
-//Derivative works to be distributed for free with full source and full credits (ie dont blame me)
-//?2001-2 mousepad - mousepad@forward.to
 
 /*
 Baal释放5小队： 4D 01 B2 00 00 00 1E 01 00 00 01 F2 3A A0 13 00 00
@@ -4300,9 +4286,8 @@ void __fastcall KeydownPatch(BYTE keycode, BYTE repeat)
   if (keycode == vkPrevPlayerStat) SetCurrentPlayerStat(-1);
   if (keycode == vkAutoDropItem)
   {
-	  UnitAny *pla = D2CLIENT_GetPlayerUnit();
-	  UnitAny *item = D2COMMON_GetCursorItem(pla->pInventory);
-	  D2CLIENT_PrintGameStringAtTopLeft(L"卧槽，我要扔东西了", 8);
+	  DD2DropCursorItemToGround();
+	  D2CLIENT_PrintGameStringAtTopLeft(L"卧槽，我扔了个东西了", 8);
   }
   for (int i = 0; i < ARRAYSIZE(viewingList); i++) {
     if (keycode == viewingList[i]->vkKeyCode)
@@ -5879,4 +5864,26 @@ int __stdcall UnicodeCharNameCheck(void *unk1, void *unk2, char *lpCharName)
 		  thechar == '<' || thechar == '>' || thechar == '|')
 		  return 0;
 	return 1;
+}
+
+
+DWORD DD2GameSendPacketToServer(LPBYTE buf, DWORD len)
+{
+	D2NET_SendPacket(0, buf, len);
+	return len;
+}
+DWORD DD2GetCursorItem() // returns ID of the item on cursor, if any
+{
+	UnitAny* p = D2COMMON_GetCursorItem(D2CLIENT_GetPlayerUnit()->pInventory);
+	return p ? p->nUnitId : 0;
+}
+BOOL DD2DropCursorItemToGround()
+{
+	DWORD dwItem = DD2GetCursorItem();
+	if (dwItem == 0)
+		return FALSE;
+
+	BYTE aPacket[5] = { 0x17 }; // 1.10 confirmed
+	::memcpy(aPacket + 1, &dwItem, 4);
+	return DD2GameSendPacketToServer(aPacket, 5);
 }
