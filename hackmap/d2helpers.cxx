@@ -149,7 +149,6 @@ inline int D2GetScreenSizeX()
 inline int D2GetScreenSizeY()
 {
 	static int nums[2] = {1280,720-16};
-	//static int nums[2] = { 1280,480};
 	//return nums[D2GFX_GetScreenSize()/2];// ? 600 : 480;
 	return nums[1];// ? 600 : 480;
 }

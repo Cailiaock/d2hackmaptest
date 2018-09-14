@@ -133,6 +133,7 @@
     <None Include="..\bin\d2hackmap.cfg.tmpl" />
     <None Include="..\bin\d2hackmap.vcb" />
     <None Include="..\bin\d2hackmap.vcb.tmpl" />
+    <None Include="D2HACKMAP.CFG" />
     <None Include="hackmap.def" />
   </ItemGroup>
   <ItemGroup>
